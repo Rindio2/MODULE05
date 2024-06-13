@@ -1,0 +1,30 @@
+.header-container {
+    display: flex;
+    width: 1800px;
+    justify-content: space-between; 
+    align-items: center;
+    padding:0;
+    background-color: none;
+  }
+  
+  .header-left img {
+    display: block;
+    justify-self: start;
+    height: 50px;
+  }
+  
+  .header-right button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #303030;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  
+  .header-right button:hover {
+    background-color: transparent;
+    box-shadow: none; 
+  }
+  
