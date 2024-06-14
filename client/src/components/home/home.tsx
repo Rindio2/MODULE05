@@ -10,11 +10,7 @@ export default function home() {
       <div className='body_web'>
         <h1>AiDos</h1>
         <h4>Fashion is live</h4>
-        {/* 
-        <button>thêm</button>
-        <button>sửa</button>
-        <button>xóa</button> 
-        */}
+        
       </div>
       <div className='footer_web'>
         <p>@sice 2020 by Rindio</p>

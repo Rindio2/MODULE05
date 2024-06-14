@@ -2,6 +2,7 @@
 import { Request,Response } from "express";
 import { findAll,findOne } from "../service/user.service";
 
+
 export const findAllUser = async(req:Request,res:Response) => {
     try {
         const users = await findAll();
@@ -27,3 +28,4 @@ export const findOneUser = async(req:Request,res:Response) => {
         
     }
 }
+
