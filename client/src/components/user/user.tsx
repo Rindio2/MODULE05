@@ -4,7 +4,7 @@ import axios from 'axios';
 const UserComponent = () => {
     const [tasks, setTasks] = useState<any[]>([]);
     const [newTask, setNewTask] = useState({ name: '', status: false });
-    const [editTaskId, setEditTaskId] = useState<number | null>(null);
+    const [editTaskId, setEditTaskId] = useState<number | null>(null); // ID của task đang được chỉnh sửa
 
     useEffect(() => {
         fetchTasks();
@@ -37,7 +37,7 @@ const UserComponent = () => {
                 console.error('Task not found for editing.');
                 return;
             }
-
+    
             const response = await axios.put(`http://localhost:8080/api/v1/tasks/${taskId}`, editedTask);
             const updatedTask = response.data; // Assuming response.data contains the updated task object
             const updatedTasks = tasks.map(task => (task.id === taskId ? updatedTask : task));
